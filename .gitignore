@@ -1,0 +1,17 @@
+*.pem
+!/.well-known/appspecific/com.tesla.3p.public-key.pem
+*.key
+*.p8
+.env
+.env.*
+*.pem.bak
+CLAUDE.md
+credentials*.json
+*token*.json
+auth.json
+.claude.json
+config.yaml
+secrets*
+private*key*
+
+/scripts/guard-*.log

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Pre-commit hook: runs guard-secrets.sh against staged files. Installed via
+# scripts/install-hooks.sh (sets git config core.hooksPath to scripts/hooks).
+set -e
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+exec "$REPO_ROOT/scripts/guard-secrets.sh"
